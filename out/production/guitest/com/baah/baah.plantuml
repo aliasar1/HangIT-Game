@@ -1,0 +1,115 @@
+@startuml
+
+title __OOP Project Class Diagram__\n
+  namespace com.baah {
+    class com.baah.GuessGame {
+        + frame : JFrame
+        - checkButton : JButton
+        - fieldlabel : JLabel
+        - guessField : JTextField
+        - guessNum : int
+        - helpLabel : JLabel
+        - label1 : JLabel
+        - livesLabel : JLabel
+        - panel1 : JPanel
+        - triesLeft : int
+        + GuessGame()
+        - check()
+        - updateTries()
+    }
+  }
+  
+
+  namespace com.baah {
+    class com.baah.Main {
+        {static} + main()
+    }
+  }
+  
+
+  namespace com.baah {
+    class com.baah.MainGame {
+        - checkBtn : JButton
+        - currentWord : String
+        - currentWordLabel : JLabel
+        - guessBtn : JButton
+        - guessField : JTextField
+        - lives : int
+        - livesLabel : JLabel
+        - mainFrame : JFrame
+        - primaryPanel : JPanel
+        - randomWord : String
+        - rootPanel : JPanel
+        - rpsBtn : JButton
+        - secondaryPanel : JPanel
+        - tictacBtn : JButton
+        - words : String[]
+        + MainGame()
+        + disableGames()
+        + enableGames()
+        + endGame()
+        + extractWords()
+        + updateLives()
+        - checkGuess()
+        - closeMiniGames()
+        - getCensoredWord()
+        - setCurrentWord()
+        - winGame()
+    }
+  }
+  
+
+  namespace com.baah {
+    class com.baah.MiniGame {
+        + lose()
+        + win()
+        ~ MiniGame()
+    }
+  }
+  
+
+  namespace com.baah {
+    class com.baah.RockPaperScissor {
+        + frame : JFrame
+        - compWins : int
+        - panel1 : JPanel
+        - paperBtn : JButton
+        - playerWins : int
+        - rockBtn : JButton
+        - round : int
+        - roundLabel : JLabel
+        - scissorBtn : JButton
+        - scoreLabel : JLabel
+        - statusLable : JLabel
+        + RockPaperScissor()
+        - nextRound()
+    }
+  }
+  
+
+
+  namespace com.baah {
+    class com.baah.TicTacToe {
+        + frame : JFrame
+        - WhoseTurn : int
+        - buttons : JButton[][]
+        - gameWon : boolean
+        - moveCounter : int
+        + TicTacToe()
+        - checkWin()
+        - compTurn()
+    }
+  }
+  
+
+
+  com.baah.Main o-- com.baah.MainGame
+  com.baah.MainGame o-- com.baah.GuessGame : guessGame
+  com.baah.MainGame o-- com.baah.TicTacToe : miniGame2
+  com.baah.MainGame o-- com.baah.RockPaperScissor : rockPaperScissor
+
+  com.baah.RockPaperScissor -up-|> com.baah.MiniGame
+  com.baah.GuessGame -up-|> com.baah.MiniGame
+  com.baah.TicTacToe -up-|> com.baah.MiniGame
+
+@enduml

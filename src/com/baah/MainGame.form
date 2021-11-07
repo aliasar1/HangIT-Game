@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.baah.MainGame">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="942" height="592"/>
+    </constraints>
+    <properties>
+      <inheritsPopupMenu value="false"/>
+      <minimumSize width="400" height="400"/>
+      <preferredSize width="400" height="400"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="c1d20" binding="primaryPanel" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16768961"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="57b84" class="javax.swing.JButton" binding="checkBtn">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14053943"/>
+              <font name="Showcard Gothic" size="18" style="1"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Check"/>
+              <verticalTextPosition value="3"/>
+            </properties>
+          </component>
+          <component id="ef92d" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <alignmentX value="0.1"/>
+              <background color="-5378095"/>
+              <font name="Rockwell Extra Bold" size="36" style="3"/>
+              <foreground color="-5378095"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Welcome to HangIt!" noi18n="true"/>
+              <verticalAlignment value="0"/>
+            </properties>
+          </component>
+          <component id="5e9f5" class="javax.swing.JLabel" binding="livesLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14053943"/>
+              <font name="Goudy Stout" size="28" style="0"/>
+              <foreground color="-12602129"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Lives:" noi18n="true"/>
+            </properties>
+          </component>
+          <component id="761f5" class="javax.swing.JLabel" binding="currentWordLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="4" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-6623283"/>
+              <font name="Consolas" size="24" style="1"/>
+              <foreground color="-6623283"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="W_OR_"/>
+            </properties>
+          </component>
+          <component id="4ca5c" class="javax.swing.JButton" binding="guessBtn">
+            <constraints>
+              <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-5378095"/>
+              <focusPainted value="false"/>
+              <focusable value="false"/>
+              <font name="Gill Sans Ultra Bold" size="14" style="1"/>
+              <foreground color="-16768961"/>
+              <text value="Start Guess Game"/>
+            </properties>
+          </component>
+          <component id="cd04e" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="1" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <alignmentX value="1.0"/>
+              <background color="-12602129"/>
+              <focusTraversalPolicyProvider value="false"/>
+              <font name="Cooper Black" size="36" style="2"/>
+              <foreground color="-12602129"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value=" Game Created by Bilal, Ali Asar, Ali Shah, Piyush"/>
+            </properties>
+          </component>
+          <component id="5bdb" class="javax.swing.JTextField" binding="guessField">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="350" height="-1"/>
+                <preferred-size width="350" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-6623283"/>
+              <font name="Fira Code" size="16" style="3"/>
+              <horizontalAlignment value="0"/>
+              <text value=""/>
+              <toolTipText value="Guess"/>
+            </properties>
+          </component>
+          <component id="c26e0" class="javax.swing.JButton" binding="tictacBtn">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-5378095"/>
+              <focusable value="false"/>
+              <font name="Gill Sans Ultra Bold" size="14"/>
+              <foreground color="-16768961"/>
+              <horizontalAlignment value="0"/>
+              <label value="Start TicTacToe"/>
+              <text value="Start TicTacToe"/>
+              <verticalAlignment value="0"/>
+            </properties>
+          </component>
+          <component id="d6360" class="javax.swing.JButton" binding="rpsBtn">
+            <constraints>
+              <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="268" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentX value="0.1"/>
+              <background color="-5378095"/>
+              <contentAreaFilled value="true"/>
+              <focusable value="false"/>
+              <font name="Gill Sans Ultra Bold" size="14" style="1"/>
+              <foreground color="-16768961"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Start Rock Paper Scissor"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="87e85" binding="secondaryPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16768961"/>
+          <enabled value="true"/>
+          <foreground color="-16768961"/>
+          <visible value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="3d883" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-14053943"/>
+              <font name="Goudy Stout" size="24" style="0"/>
+              <foreground color="-14053943"/>
+              <text value="Complete MiniGame to Continue"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

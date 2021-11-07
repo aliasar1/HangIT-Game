@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.baah.RockPaperScissor">
+  <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="364" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-5378095"/>
+      <foreground color="-5378095"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="d6acb" class="javax.swing.JButton" binding="rockBtn">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16768961"/>
+          <focusable value="false"/>
+          <font name="Gill Sans Ultra Bold" size="12"/>
+          <foreground color="-5378095"/>
+          <text value="Rock"/>
+        </properties>
+      </component>
+      <component id="fa9dc" class="javax.swing.JButton" binding="paperBtn">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16768961"/>
+          <focusable value="false"/>
+          <font name="Gill Sans Ultra Bold" size="12"/>
+          <foreground color="-5378095"/>
+          <text value="Paper"/>
+        </properties>
+      </component>
+      <component id="5a9e7" class="javax.swing.JButton" binding="scissorBtn">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16768961"/>
+          <focusable value="false"/>
+          <font name="Gill Sans Ultra Bold" size="12"/>
+          <foreground color="-5378095"/>
+          <text value="Scissor"/>
+        </properties>
+      </component>
+      <component id="ed290" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16768961"/>
+          <font name="Rockwell Extra Bold" size="16"/>
+          <foreground color="-16768961"/>
+          <text value="Welcome to Rock Paper Scissor Game"/>
+        </properties>
+      </component>
+      <component id="40cba" class="javax.swing.JLabel" binding="roundLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="2" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-14053943"/>
+          <font name="Gill Sans Ultra Bold" size="14"/>
+          <foreground color="-14053943"/>
+          <text value="Round: 1/3"/>
+        </properties>
+      </component>
+      <component id="598a9" class="javax.swing.JLabel" binding="statusLable">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16768961"/>
+          <font name="DialogInput" size="16" style="1"/>
+          <foreground color="-16768961"/>
+          <text value="There will be 3 Rounds"/>
+        </properties>
+      </component>
+      <component id="99d7f" class="javax.swing.JLabel" binding="scoreLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
